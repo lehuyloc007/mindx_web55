@@ -1,7 +1,7 @@
 const { MongoClient } = require("mongodb");
 const db = {};
 const connectToDb = async () => {
-    const mongodbClient = new MongoClient("mongodb+srv://admin:admin123456@cluster0.vpqs1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    const mongodbClient = new MongoClient("mongodb+srv://admin:admin123@cluster0.vpqs1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     await mongodbClient.connect();
     console.log("db connected")
     const database = mongodbClient.db("mindx_web55");
